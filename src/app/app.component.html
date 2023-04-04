@@ -1,0 +1,18 @@
+<ktd-grid [cols]="cols" [rowHeight]="rowHeight" [layout]="layout" [compactType]="compactType" [gap]="gap"
+(layoutUpdated)="onLayoutUpdated($event)" (gridItemResize)="onGridItemResize($event)">
+<ktd-grid-item id="0">
+  <div>Card 0</div>
+  <div class="grid-item-remove-handle" (mousedown)="stopEventPropagation($event)" (click)="removeItem('0')">
+  </div>
+</ktd-grid-item>
+<ktd-grid-item id="1">
+  <div>Card 1</div>
+  <div class="grid-item-remove-handle" (mousedown)="stopEventPropagation($event)" (click)="removeItem('1')">
+  </div>
+</ktd-grid-item>
+<ktd-grid-item id="2">
+  <div>Card 2</div>
+  <div class="grid-item-remove-handle" (mousedown)="stopEventPropagation($event)" (click)="removeItem('2')">
+  </div>
+</ktd-grid-item>
+</ktd-grid>

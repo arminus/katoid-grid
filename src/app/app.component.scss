@@ -1,0 +1,18 @@
+.grid-item-remove-handle {
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  right: 0;
+
+  &::after {
+    content: 'x';
+    color: #121212;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Arial, sans-serif;
+  }
+}
